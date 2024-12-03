@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Expense Tracker</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Smart Expense Tracker</h1>
+        </header>
+
+        <section class="budget-section">
+            <h2>Set Your Budget</h2>
+            <input type="number" id="budgetInput" placeholder="Enter Budget Amount">
+            <button onclick="setBudget()">Set Budget</button>
+        </section>
+
+        <section class="expense-section">
+            <h2>Add Expense</h2>
+            <input type="text" id="expenseName" placeholder="Expense Name">
+            <input type="number" id="expenseAmount" placeholder="Expense Amount">
+            <button onclick="addExpense()">Add Expense</button>
+        </section>
+
+        <section class="financial-summary">
+            <h2>Financial Summary</h2>
+            <p>Total Expenses: $<span id="totalExpenses">0</span></p>
+            <p>Remaining Budget: $<span id="remainingBudget">0</span></p>
+            <p>Budget Status: <span id="budgetStatus">Set your budget</span></p>
+        </section>
+
+        <section class="expense-list">
+            <h2>Expense History</h2>
+            <ul id="expenseList">
+                <!-- Expense list will be populated here -->
+            </ul>
+        </section>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>
